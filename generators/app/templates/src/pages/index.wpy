@@ -2,28 +2,21 @@
   .hello{}
 </style>
 <template>
-    <Row justify="center" className="test-ext-class">
-      <Col>col1</Col>
-      <Col>col2</Col>
-      <Col>col3</Col>
-    </Row>
+    <<%= ProjectName %> />
 </template>
 
 <script>
   import wepy from 'wepy';
-  // import Row from '../components/row';
-  // import Col from '../components/col';
-  import { Row,Col } from '../components/index';
+  import <%= ProjectName %> from '../components/index';
 
   export default class extends wepy.page {
 
     config = {
-      navigationBarTitleText: 'wepy-flexbox-grid demo'
+      navigationBarTitleText: '<%= project_name %> demo'
     }
 
     components = {
-      Row,
-      Col
+      <%= ProjectName %>
     }
 
     data = {
