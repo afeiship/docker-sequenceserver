@@ -2,7 +2,7 @@
   "name": "<%= project_name %>",
   "version": "0.0.1",
   "description": "<%= description %>",
-  "main": "dist/index.js",
+  "main": "dist/index.wpy",
   "scripts": {
     "clean":"gulp clean",
     "dev": "npm run clean && wepy build --watch",
