@@ -13,3 +13,6 @@ cd docker-sequenceserver
 # start the server
 npm run start
 ```
+
+## resources
+- https://github.com/wurmlab/sequenceserver
