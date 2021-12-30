@@ -1,53 +1,25 @@
 {
-  "name": "generator-wepy-component",
-  "version": "0.0.0",
-  "description": "Yeoman generator for wepy component.",
-  "homepage": "https://github.com/afeiship/generator-wepy-component",
+  "name": "@jswork/docker-sequenceserver",
+  "version": "1.0.0",
+  "description": "Docker for sequenceserver.",
+  "homepage": "https://js.work",
   "author": {
     "name": "afeiship",
-    "email": "1290657123@qq.com",
-    "url": "https://github.com/afeiship"
+    "email": "1290657123@qq.com"
   },
-  "files": [
-    "generators"
-  ],
-  "main": "generators/index.js",
-  "keywords": [
-    "wepy",
-    "wechat",
-    "weixin",
-    "yeoman-generator"
-  ],
-  "devDependencies": {
-    "yeoman-test": "^1.6.0",
-    "yeoman-assert": "^3.0.0",
-    "nsp": "^2.6.3",
-    "eslint": "^3.18.0",
-    "eslint-config-xo-space": "^0.16.0",
-    "jest": "^19.0.2",
-    "jest-cli": "^19.0.1"
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
-  "dependencies": {
-    "chalk": "^1.1.3",
-    "yeoman-generator": "^1.0.0",
-    "yeoman-generator-helper": "github:afeiship/yeoman-generator-helper",
-    "yosay": "^2.0.0"
-  },
-  "jest": {
-    "testEnvironment": "node"
+  "boilerplate": "docker-sequenceserver",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afeiship/docker-sequenceserver.git"
   },
   "scripts": {
-    "prepublish": "nsp check",
-    "pretest": "eslint . --fix",
-    "test": "jest"
-  },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "jest": true,
-      "node": true
-    }
-  },
-  "repository": "git@github.com:afeiship/generator-wepy-component.git",
-  "license": "MIT"
+    "start": "docker-compose up",
+    "start-d": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "restart": "docker-compose restart"
+  }
 }
